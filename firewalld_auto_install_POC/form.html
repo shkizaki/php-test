@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>入力フォーム</title>
+</head>
+<body>
+<form action="form.php" method="POST">
+
+	<p>お名前：<input type="text" name="handle" required></p>
+
+	<p>性別：
+		<input type="radio" name="sex" value="male" checked="checked">男性
+		<input type="radio" name="sex" value="female" checked="checked">女性
+	</p>
+
+	<p>年齢：
+	<select name="age">
+		<option value="10+">10～19歳</option>
+		<option value="20+">20～29歳</option>
+		<option value="30+">30～39歳</option>
+		<option value="40+">40～49歳</option>
+		<option value="50+">50～59歳</option>
+		<option value="60+">60歳以上</option>
+	</select>
+	</p>
+
+	<p>お持ちの機器：
+		<input type="checkbox" name="device[]" value="pc">パソコン
+		<input type="checkbox" name="device[]" value="phone">スマートフォン
+		<input type="checkbox" name="device[]" value="tablet">タブレット
+	</p>
+
+	<div>
+		<p.ご感想、ご質問をご記入ください。</p>
+			<textarea name="opinion" rows="5" cols="40" required></textarea>
+	</div>
+
+	<p><input type="submit" value="送信"></p>
+</form>
+</body>
+</html>
